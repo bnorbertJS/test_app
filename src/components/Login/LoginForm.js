@@ -65,7 +65,9 @@ class LoginForm extends Component {
     componentDidMount(){
         //focus email input field
         const email = document.getElementById("email")
-        email.focus()
+        if(email){
+            email.focus()
+        }
     }
 
     render() {
