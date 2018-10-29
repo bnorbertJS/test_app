@@ -1,6 +1,6 @@
-#Test Application
+# Test Application
 
-##How to start
+## How to start
 
 ```
 git clone https://github.com/bnorbertJS/test_app.git
@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-##TechStack
+## TechStack
 * React 16
 * Webpack 4
 * Babel 7
