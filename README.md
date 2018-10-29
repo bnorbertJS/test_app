@@ -3,6 +3,8 @@
 ##How to start
 
 ```
+git clone https://github.com/bnorbertJS/test_app.git
+
 //install dependencies
 npm install
 ```
