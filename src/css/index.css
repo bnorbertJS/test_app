@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url("../../public/sl_bg.jpg");
+    color: whitesmoke;
+  }
+
+  .title{
+    padding: 5px;
+    padding-left: 30px;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.border-box{
+    background: white;
+    color: black;
+    padding: 10px;
+    min-width: 150px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+  .loader{
+    margin: 0 0 2em;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+    display:block;
+  }
+  
+  /*
+    Set the color of the icon
+  */
+  svg path,
+  svg rect{
+    fill: #FF6700;
+  }
+
+.error{
+  background-color: #d9534f;
+}
+
+.success{
+  background-color: #4CAF50;
+}
+
+.notification{
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.movie-list-container{
+  margin: 30px;
+}
+
+.movielist-item-container{
+  position: relative;
+  min-width: 150px;
+  margin: 10px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: all .3s ease-in-out;
+}
+
+.movie-item-text{
+  position: absolute;
+  width: calc(100% - 10px);
+  height: 80px;
+  bottom: 0;
+  padding-left: 10px;
+  background-color: black;
+  opacity: .9;
+}
+
+.movielist-item-container:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.movielist-item-container:focus{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.section{
+  transition: all .3s ease-in-out;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.section:focus{
+  transform: scale(1.1);
+}
+
+.detail-content{
+  width: 80%;
+  max-height: 30em;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.list-image{
+  width: 100%;
+}
+
+.search-input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 20px;
+}
+
+.search-input-container{
+  margin: 30px;
+  display: block;
+}
+
+.input-error{
+  border: 2px solid red;
+  background-color: #f9a0a0;
+}
