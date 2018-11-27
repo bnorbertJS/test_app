@@ -13,9 +13,12 @@ body {
     color: whitesmoke;
   }
 
-  .title{
-    padding: 5px;
-    padding-left: 30px;
+  .head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   input[type=text], input[type=password] {

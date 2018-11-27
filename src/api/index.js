@@ -4,7 +4,7 @@ import getRequestToken from '../utils/GetRequestToken'
 /*
 Login Post request
 */ 
-const Login = (email, password) =>{
+const Login = (email, password) => {
     return axios
         .post(`${API_URL}/login`,{
             email,
@@ -15,7 +15,7 @@ const Login = (email, password) =>{
 /*
 Fetch Movie Details by id
 */
-const MovieDetails = (id) =>{
+const MovieDetails = (id) => {
     return axios
         .get(`${API_URL}/detail/${id}`,{
             headers: {
@@ -27,7 +27,7 @@ const MovieDetails = (id) =>{
 /*
 Fetch Movies
 */
-const MovieList = () =>{
+const MovieList = () => {
     return axios
         .get(`${API_URL}/movie`,{
             headers: {
@@ -39,13 +39,13 @@ const MovieList = () =>{
 /*
 Search movies
 */
-const SearchMovies = (searchValue) =>{
+const SearchMovies = (searchValue) => {
     //format for x-www-form-urlencoded
     const data = new URLSearchParams()
     data.append("keyword", searchValue)
     
     return axios
-        .post(`${API_URL}/search`,data ,{
+        .post(`${API_URL}/search`, data ,{
             headers: {
                 "Content-type": "application/x-www-form-urlencoded",
                 "X-SimpleOvpApi": getRequestToken()
