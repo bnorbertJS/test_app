@@ -24,7 +24,7 @@ class App extends Component {
                     <div className="head">
                         <span className="title">Accedo Test App</span>
                         {getRequestToken() &&
-                            <span className="logout-btn"onClick={this.onClickLogout}>logout</span>   
+                            <span className="logout-btn"onClick={this.onClickLogout}>Logout</span>   
                         }
                     </div>
                     
